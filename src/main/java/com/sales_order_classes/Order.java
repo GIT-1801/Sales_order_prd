@@ -15,6 +15,7 @@ public class Order {
 	public void addItem(OrderItem item) {
         items.add(item);
         System.out.println("Item added: " + item.getItemName());
+        System.out.println("hello i am from changes branch");
     }
 	
 	 public double getTotalAmount() {

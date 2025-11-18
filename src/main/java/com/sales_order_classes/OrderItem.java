@@ -27,5 +27,15 @@ public class OrderItem {
 	    public int getQuantity() {
 	        return quantity;
 	    }
+
+		public boolean isActive() {
+			// TODO Auto-generated method stub
+			return false;
+		}
+
+		public int getId() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
 	
 }

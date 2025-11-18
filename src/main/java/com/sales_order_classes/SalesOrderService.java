@@ -25,4 +25,16 @@ public class SalesOrderService {
 	        }
 	        return null;
 	    }
+
+public boolean isOrderItemActive(int orderId, int orderItemId) {
+    Order order = getOrderById(orderId);
+    if (order == null) return false;
+    for (OrderItem item : order.getItems()) {
+        if (item.getId() == orderItemId) {
+            return item.isActive();
+        }
+    }
+    return false;
+}
+
 }
